@@ -7,6 +7,7 @@ use Omines\DataTablesBundle\Adapter\Doctrine\ORMAdapter;
 use Omines\DataTablesBundle\Column\TextColumn;
 use Omines\DataTablesBundle\Column\BoolColumn;
 use Omines\DataTablesBundle\Column\DateTimeColumn;
+use Omines\DataTablesBundle\Column\NumberColumn;
 use Omines\DataTablesBundle\DataTableFactory;
 use Omines\DataTablesBundle\DataTable;
 use Omines\DataTablesBundle\DataTableTypeInterface;
@@ -32,10 +33,14 @@ class <?= $class_name ?> extends <?= $parent_class_name; ?> implements <?= $inte
             case 'datetime':
                 echo "->add('" . $field['fieldName'] ."', DateTimeColumn::class, [
                     'format' => 'd/m/Y H:i',
+                    'searchable' => false,
                 ])" . PHP_EOL;
                 break;
 
             case 'integer':
+                echo "->add('" . $field['fieldName'] ."', NumberColumn::class)" . PHP_EOL;
+                break;
+                
             case 'text':
             case 'string':
             default:
