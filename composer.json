@@ -19,6 +19,6 @@
         "omines/datatables-bundle": "<=0.5.1"
     },
     "autoload": {
-        "psr-4": { "Sbyaute\\AdminLTEMakerBundle45\\": "src/" }
+        "psr-4": { "Sbyaute\\AdminLTEMakerBundle\\": "src/" }
     }
 }
