@@ -5,20 +5,20 @@
     "keywords": [ "adminlte", "crud" ],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
-        "symfony/twig-bundle": "^5",
-        "symfony/console": "5.*",
-        "symfony/form": "5.*",
-        "symfony/security-bundle": "5.*",
-        "symfony/translation": "5.*",
-        "symfony/validator": "5.*",
-        "symfony/maker-bundle": "^1.0",
-        "sensio/framework-extra-bundle": "^5",
-        "doctrine/annotations": "^1.0",
-        "kevinpapst/adminlte-bundle": "^3.2",
-        "omines/datatables-bundle": "^0.5.1"
+        "php": ">=7.1.3",
+        "symfony/twig-bundle": ">=4.4",
+        "symfony/console": ">=4.4",
+        "symfony/form": ">=4.4",
+        "symfony/security-bundle": ">=4.4",
+        "symfony/translation": ">=4.4",
+        "symfony/validator": ">=4.4",
+        "symfony/maker-bundle": ">=1.0",
+        "sensio/framework-extra-bundle": ">=4",
+        "doctrine/annotations": ">=1.0",
+        "kevinpapst/adminlte-bundle": ">=3.2",
+        "omines/datatables-bundle": "<=0.5.1"
     },
     "autoload": {
-        "psr-4": { "Sbyaute\\AdminLTEMakerBundle\\": "src/" }
+        "psr-4": { "Sbyaute\\AdminLTEMakerBundle45\\": "src/" }
     }
 }
